@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bluethroat Color Scheme</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #f5f0e8;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 52px 20px;
+      font-family: Georgia, serif;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 880px;
+    }
+
+    .bird-photo {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      object-position: center 30%;
+      display: block;
+      border-radius: 18px 18px 0 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .scheme-header th {
+      background: #1a1008;
+      padding: 30px 24px 26px;
+      text-align: center;
+      font-size: 2rem;
+      font-style: italic;
+      color: #f0e8d8;
+      letter-spacing: 0.06em;
+    }
+
+    .scheme-subtitle {
+      display: block;
+      font-size: 0.9rem;
+      font-style: normal;
+      color: rgba(200,170,110,0.8);
+      letter-spacing: 0.15em;
+      margin-top: 6px;
+    }
+
+    .col-headers th {
+      background: #2c1f0e;
+      color: #d2b98c;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 13px 18px;
+      text-align: center;
+    }
+
+    tbody td {
+      text-align: center;
+      vertical-align: middle;
+      padding: 20px 14px;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+      font-family: monospace;
+      font-size: 0.9rem;
+    }
+
+    tbody tr:nth-child(odd)  td { background: rgba(255,255,255,0.55); }
+    tbody tr:nth-child(even) td { background: rgba(240,230,215,0.7); }
+
+    .color-cell {
+      min-width: 150px;
+      font-family: Georgia, serif;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 28px 14px;
+    }
+
+    .r1 .color-cell { background-color: #2e5fa3; color: #e8f0ff; }
+    .r2 .color-cell { background-color: #a04828; color: #ffe8dc; }
+    .r3 .color-cell { background-color: #7a5c38; color: #f5e8d5; }
+    .r4 .color-cell { background-color: #e8dcc0; color: #3a2c14; }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+	<img class="bird-photo" src="images/bird.jpg" alt="Bluethroat bird perched on a rock"/>	
+
+  <table>
+    <thead>
+      <tr class="scheme-header">
+        <th colspan="4">
+          The Bluethroat
+          <span class="scheme-subtitle">A palette drawn from the plumage of Luscinia svecica</span>
+        </th>
+      </tr>
+      <tr class="col-headers">
+        <th>Color Name</th>
+        <th>Hex Value</th>
+        <th>RGB Value</th>
+        <th>HSL Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="r1">
+        <td class="color-cell">Cobalt Throat</td>
+        <td>#2E5FA3</td>
+        <td>rgb(46, 95, 163)</td>
+        <td>hsl(216, 56%, 41%)</td>
+      </tr>
+      <tr class="r2">
+        <td class="color-cell">Russet Band</td>
+        <td>#A04828</td>
+        <td>rgb(160, 72, 40)</td>
+        <td>hsl(18, 60%, 39%)</td>
+      </tr>
+      <tr class="r3">
+        <td class="color-cell">Tawny Wing</td>
+        <td>#7A5C38</td>
+        <td>rgb(122, 92, 56)</td>
+        <td>hsl(30, 37%, 35%)</td>
+      </tr>
+      <tr class="r4">
+        <td class="color-cell">Cream Belly</td>
+        <td>#E8DCC0</td>
+        <td>rgb(232, 220, 192)</td>
+        <td>hsl(40, 47%, 83%)</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+</body>
+</html>
